@@ -29,7 +29,8 @@ Passos executados:
 _vai tomar um café..._
 
 9. (de volta ao lado de fora): pegamos o id do contêiner com `docker ps`
-10. copiamos o arquivo para fora: `docker cp <id do contêiner>:/kernel/linux-image-5.10.158_5.10.158-1_i386.deb .`
+10. pegamos o nome do arquivo gerado com um simples 
+11. copiamos o arquivo para fora: `docker cp <id do contêiner>:/kernel/linux-image-....deb .`
 
 Referências:
 
