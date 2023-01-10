@@ -26,6 +26,11 @@ Passos executados:
 8. (dentro do contêiner) setadas variáveis de ambiente do compilador para otimizar para o processador (ver referência)
 9. (dentro do contêiner) finalmente `./4-build.sh` executa o build específico do Debian, que gera um pacote .deb
 
+_vai tomar um café..._
+
+9. (de volta ao lado de fora): pegamos o id do contêiner com `docker ps`
+10. copiamos o arquivo para fora: `docker cp <id do contêiner>:/kernel/linux-image-5.10.158_5.10.158-1_i386.deb .`
+
 Referências:
 
 1. https://wiki.debian.org/BuildADebianKernelPackage
