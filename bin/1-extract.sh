@@ -1,3 +1,3 @@
 #!/bin/bash
-tar xavf /usr/src/linux-source-4.15.tar.xz /kernel
+tar xavf "/usr/src/linux-source-$KERNEL_VERSION.tar.xz" -C /kernel
 

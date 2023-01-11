@@ -7,7 +7,7 @@ Este projeto:
 * instala os pacotes necessários ao build
 * mantém um volume com o diretório usado no build para preservar as configurações modificadas e os resultados
 * arquivos de configuração de amostra:
-  * `config-5.10.0-20-686-pae`: original da distribuição, copiado da máquina alvo
+  * `config-4.19.0-20-686`: original da distribuição, copiado da máquina alvo
   * `config-new`: o `.config` resultante após as configurações:
     * configurado processador da máquina como Pentium 4 (similar)
     * removidos drivers wireless exceto o Atheros/Qualcomm da placa-mãe

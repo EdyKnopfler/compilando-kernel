@@ -1,4 +1,4 @@
 #!/bin/bash
-cd /kernel/linux-source-5.10
+cd "/kernel/linux-source-$KERNEL_VERSION"
 make nconfig
 
