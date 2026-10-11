@@ -1,0 +1,111 @@
+Module                  Size  Used by
+hid_generic            16384  0
+usbhid                 49152  0
+hid                   114688  2 hid_generic,usbhid
+nls_ascii              16384  0
+nls_cp437              16384  0
+vfat                   24576  0
+fat                    69632  1 vfat
+exfat                  77824  1
+ctr                    16384  1
+ccm                    20480  3
+qrtr                   32768  2
+ath5k                 139264  0
+ath                    28672  1 ath5k
+i915                 2191360  3
+mac80211              786432  1 ath5k
+snd_hda_codec_realtek   131072  1
+snd_hda_codec_generic    73728  1 snd_hda_codec_realtek
+ledtrig_audio          16384  1 snd_hda_codec_generic
+drm_buddy              20480  1 i915
+uvcvideo               98304  0
+videobuf2_vmalloc      20480  1 uvcvideo
+snd_hda_intel          40960  3
+drm_display_helper    106496  1 i915
+videobuf2_memops       20480  1 videobuf2_vmalloc
+videobuf2_v4l2         24576  1 uvcvideo
+snd_intel_dspcfg       32768  1 snd_hda_intel
+snd_intel_sdw_acpi     20480  1 snd_intel_dspcfg
+videobuf2_common       49152  4 uvcvideo,videobuf2_vmalloc,videobuf2_memops,videobuf2_v4l2
+cec                    45056  2 drm_display_helper,i915
+snd_hda_codec         106496  3 snd_hda_intel,snd_hda_codec_generic,snd_hda_codec_realtek
+rc_core                45056  1 cec
+cfg80211              724992  3 mac80211,ath,ath5k
+videodev              184320  3 uvcvideo,videobuf2_common,videobuf2_v4l2
+ttm                    57344  1 i915
+iTCO_wdt               16384  0
+snd_hda_core           61440  4 snd_hda_intel,snd_hda_codec,snd_hda_codec_generic,snd_hda_codec_realtek
+pcspkr                 16384  0
+r8188eu               311296  0
+intel_pmc_bxt          16384  1 iTCO_wdt
+iTCO_vendor_support    16384  1 iTCO_wdt
+snd_hwdep              16384  1 snd_hda_codec
+watchdog               28672  1 iTCO_wdt
+mc                     49152  4 uvcvideo,videobuf2_common,videodev,videobuf2_v4l2
+drm_kms_helper        110592  2 drm_display_helper,i915
+snd_pcm                94208  3 snd_hda_intel,snd_hda_codec,snd_hda_core
+libarc4                16384  2 mac80211,r8188eu
+snd_timer              32768  1 snd_pcm
+i2c_algo_bit           16384  1 i915
+snd                    69632  13 snd_hda_intel,snd_hwdep,snd_hda_codec,snd_timer,snd_hda_codec_generic,snd_hda_codec_realtek,snd_pcm
+fb_sys_fops            16384  1 drm_kms_helper
+syscopyarea            16384  1 drm_kms_helper
+sysfillrect            16384  1 drm_kms_helper
+soundcore              16384  1 snd
+sysimgblt              16384  1 drm_kms_helper
+eeepc_laptop           20480  0
+sparse_keymap          16384  1 eeepc_laptop
+button                 20480  0
+rfkill                 20480  4 eeepc_laptop,cfg80211
+ac                     20480  0
+joydev                 24576  0
+evdev                  20480  14
+serio_raw              20480  0
+sg                     28672  0
+binfmt_misc            24576  1
+bfq                    73728  3
+p4_clockmod            20480  0
+speedstep_lib          20480  1 p4_clockmod
+drm                   364544  7 drm_display_helper,i915,ttm,drm_buddy,drm_kms_helper
+fuse                  114688  3
+loop                   28672  0
+dm_mod                118784  0
+efi_pstore             16384  0
+configfs               36864  1
+ip_tables              24576  0
+x_tables               28672  1 ip_tables
+autofs4                40960  2
+ext4                  675840  1
+crc16                  16384  1 ext4
+mbcache                16384  1 ext4
+jbd2                  106496  1 ext4
+crc32c_generic         16384  1
+uas                    28672  0
+usb_storage            57344  2 uas
+sd_mod                 53248  2
+t10_pi                 16384  1 sd_mod
+crc64_rocksoft         20480  1 t10_pi
+crc64                  20480  1 crc64_rocksoft
+crc_t10dif             20480  1 t10_pi
+crct10dif_generic      16384  1
+crct10dif_common       16384  2 crct10dif_generic,crc_t10dif
+ata_generic            16384  0
+ata_piix               36864  1
+ahci                   45056  0
+libahci                32768  1 ahci
+libata                253952  4 ahci,ata_piix,libahci,ata_generic
+scsi_mod              188416  5 sd_mod,usb_storage,libata,uas,sg
+psmouse               147456  0
+uhci_hcd               45056  0
+ehci_pci               20480  0
+i2c_i801               32768  0
+ehci_hcd               69632  1 ehci_pci
+video                  57344  2 eeepc_laptop,i915
+i2c_smbus              20480  1 i2c_i801
+usbcore               212992  8 uvcvideo,usbhid,usb_storage,ehci_hcd,uhci_hcd,r8188eu,uas,ehci_pci
+scsi_common            16384  5 usb_storage,libata,uas,sg,scsi_mod
+lpc_ich                28672  0
+atl2                   28672  0
+usb_common             16384  4 uvcvideo,ehci_hcd,uhci_hcd,usbcore
+wmi                    24576  1 video
+battery                24576  0
